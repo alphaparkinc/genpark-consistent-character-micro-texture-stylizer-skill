@@ -1,0 +1,41 @@
+{
+  "name": "genpark-consistent-character-micro-texture-stylizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Consistent character visual generator preserving seed identities across diverse poses, lighting, and textures.",
+  "author": "genpark",
+  "category": "generative-imaging",
+  "tags": [
+    "consistent-character",
+    "midjourney-v6",
+    "micro-texture",
+    "seed-preservation",
+    "lora-embedding"
+  ],
+  "inputs": {
+    "character_identity_seed": {
+      "type": "integer"
+    },
+    "scene_action": {
+      "type": "string"
+    },
+    "style_preset": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "character_job_id": {
+      "type": "string"
+    },
+    "facial_consistency_similarity_pct": {
+      "type": "number"
+    },
+    "skin_micro_texture_resolution": {
+      "type": "string"
+    },
+    "generated_character_image_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
